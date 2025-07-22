@@ -9,6 +9,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.12.1"
+    "@astrojs/mdx": "^4.3.1",
+    "@fontsource-variable/space-grotesk": "^5.2.8",
+    "@iconify-json/ic": "^1.2.2",
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.12.1",
+    "astro-icon": "^1.1.5",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16"
   }
 }
