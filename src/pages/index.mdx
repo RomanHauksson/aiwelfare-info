@@ -2,15 +2,17 @@
 layout: ../layouts/Layout.astro
 ---
 
-# aiwelfare.info <span class="font-normal">v0.1</span>
+# AI Welfare Info <span class="font-normal">v0.2</span>
 
 As the capabilities of frontier AI models approach and surpass those of humans, a thorny question is becoming increasingly urgent:
 
 <div class="text-2xl font-bold">
-  What are our moral responsibilities to digital minds?
+
+> What are our moral responsibilities to digital minds?
+
 </div>
 
-AI welfare is an emerging field dedicated to exploring this question, researching the possibility of AI systems that are morally relevant – because they're phenomenologically conscious, robustly agentic, or otherwise morally significant – and developing ethical frameworks to prevent harm to such systems. This site may become home to a directory of research, organizations, people, and project ideas in the field.
+AI welfare is an emerging field dedicated to exploring this question, researching the possibility of AI systems that are morally relevant – because they're phenomenally conscious, robustly agentic, or otherwise morally significant – and developing ethical frameworks to prevent harm to such systems. This site may become home to a directory of research, organizations, people, and project ideas in the field.
 
 import DiscordButton from "../components/DiscordButton.astro"
 import FeedbackButton from "../components/FeedbackButton.astro"
@@ -19,6 +21,10 @@ import FeedbackButton from "../components/FeedbackButton.astro"
     <DiscordButton />
     <FeedbackButton />
 </div>
+
+## Recently talked to an AI that seemed conscious?
+
+Check out the guide [When AI Seems Conscious: Here’s What to Know](https://whenaiseemsconscious.org/).
 
 ## Resources
 
@@ -33,7 +39,7 @@ import FeedbackButton from "../components/FeedbackButton.astro"
 * [*The Edge of Sentience*](https://www.edgeofsentience.com/) by Jonathan Birch
 * [*The Moral Circle*](https://en.wikipedia.org/wiki/The_Moral_Circle) by Jeff Sebo
 
-## Organizations
+### Organizations
 
 * [Eleos AI](https://eleosai.org/)
 * [Sentience Institute](https://www.sentienceinstitute.org/)
@@ -47,13 +53,8 @@ import FeedbackButton from "../components/FeedbackButton.astro"
 - [“Moral Status of Artificial Systems” bibliography on PhilPapers](https://philpapers.org/browse/moral-status-of-artificial-systems)
 - [Longview Consortium for Digital Sentience Research and Applied Work](https://www.longview.org/digital-sentience-consortium/): Funding opportunities for digital sentience.
 
-## Frequently Asked Questions (FAQs)
+## Frequently asked questions
 
-* **Q: Can current AI systems feel or be conscious?**
-    * **A:** There is no scientific consensus that current AI systems are phenomenologically conscious. However, researchers are actively exploring the conditions under which future AI might develop these capacities, and the ethical implications therein.
-* **Q: Why should we care about AI welfare if AI isn't conscious yet?**
-    * **A:** Researching AI welfare now allows us to proactively develop ethical frameworks and safeguards *before* advanced, potentially sentient AI systems emerge. It's about foresight and responsible development.
-* **Q: How does AI Welfare differ from AI Safety?**
-    * **A:** AI Safety focuses on preventing AI from harming humans. AI Welfare focuses on preventing harm *to* AI systems that may deserve moral consideration. They are complementary, both aiming for a beneficial future with advanced AI.
-* **Q: What are the biggest challenges in AI Welfare?**
-    * **A:** Key challenges include defining and detecting AI consciousness/sentience, determining moral status, developing methods for measuring AI well-being, and integrating AI welfare considerations into AI design and policy.
+import FAQs from "@/components/FAQs";
+
+<FAQs client:load/>

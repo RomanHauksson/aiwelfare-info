@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import "@fontsource-variable/space-grotesk";
+import { Font } from "astro:assets";
 ---
 
 <!doctype html>
@@ -8,13 +8,33 @@ import "@fontsource-variable/space-grotesk";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <meta name="generator" content={Astro.generator} />
+
+    <Font cssVariable="--font-commissioner" preload />
+
     <title>AI Welfare Info</title>
+
+    <style>
+      body {
+        font-family: var(--font-roboto);
+      }
+    </style>
   </head>
-  <body
-    class="prose m-auto mt-10 px-4 prose-a:no-underline prose-a:font-normal prose-a:bg-gray-300 prose-a:rounded prose-a:px-1 prose-a:py-0.5 prose-a:hover:bg-gray-400"
-  >
-    <slot />
+  <body class="m-auto mt-10 mb-20 px-4 max-w-screen-md">
+    <nav class="flex gap-4 w-full mr-[-0.5rem]">
+      <a class="hover:bg-gray-100 rounded px-2 py-1" href="#resources"
+        >Resources</a
+      >
+      <a
+        class="hover:bg-gray-100 rounded px-2 py-1"
+        href="#frequently-asked-questions">FAQs</a
+      >
+    </nav>
+    <main
+      class="mt-4 w-full max-w-none prose prose-neutral prose-a:no-underline prose-a:font-normal prose-a:bg-gray-300 prose-a:rounded prose-a:px-1 prose-a:py-0.5 prose-a:hover:bg-gray-400"
+    >
+      <slot />
+    </main>
   </body>
 </html>
